@@ -41,4 +41,4 @@ with open('./Source1.py', 'r') as source1:
                 time.sleep(0.1)
             for i in tqdm(range(int(9e6))):
                 pass
-            print('\n' + '#'*20 + ' -- DONE --' + '#'*20)
+            print('\n' + '#'*20 + ' ---DONE--- ' + '#'*20)
