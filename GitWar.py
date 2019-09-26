@@ -26,7 +26,7 @@ with open('./Source1.py', 'r') as source1:
         linelist = source1.readlines()
         countOfLines = len(linelist)
         for i in range(1):
-            print('saving the code')
+            print('saving line ', i)
             source2.write('' + linelist[i])
             print('committing to github...')
             os.system("git commit -m 'v4.0' .")
