@@ -25,7 +25,32 @@ source1 = open('./Source1.py', 'r')
 source2 = open('Source2.py', 'a')
 linelist = source1.readlines()
 countOfLines = len(linelist)
-for i in range(countOfLines):
+for i in range(1):
+    print('saving line', i)
+    source2.write('' + linelist[i])
+    print('committing to github...')
+    os.system("git commit -m 'v4.0' .")
+    for i in progressbar(range(15), "Computing: ", 40):
+        time.sleep(0.1)
+    print('pushing to master...')
+
+    for i in tqdm(range(int(9e6))):
+        pass
+    os.system('git push origin master')
+    for i in progressbar(range(15), "Computing: ", 40):
+        time.sleep(0.1)
+    for i in tqdm(range(int(9e6))):
+        pass
+    print('\n' + '#'*20 + ' ---DONE--- ' + '#'*20 + '\n')
+
+source1.close()
+source2.close()
+
+source1 = open('./Source1.py', 'r')
+source2 = open('Source2.py', 'a')
+linelist = source1.readlines()
+countOfLines = len(linelist)
+for i in range(1):
     print('saving line', i)
     source2.write('' + linelist[i])
     print('committing to github...')
