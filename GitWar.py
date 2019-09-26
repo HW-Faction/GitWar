@@ -21,12 +21,12 @@ def progressbar(it, prefix="", size=60, file=sys.stdout):
     file.flush()
 
 
-for i in range(5):
+for i in range(7):
     source1 = open('./Source1.py', 'r')
     source2 = open('Source2.py', 'a')
     linelist = source1.readlines()
     countOfLines = len(linelist)
-    print('saving line...')
+    print('saving line', i + 1)
     source2.write('' + linelist[i])
     print('committing to github...')
     os.system("git commit -m 'v4.0' .")
