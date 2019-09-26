@@ -37,5 +37,10 @@ with open('./Source1.py', 'r') as source1:
             print('pushing to master...')
 
             for i in tqdm(range(int(9e6))):
-                os.system('git push origin master')
+                pass
+            os.system('git push origin master')
+            for i in progressbar(range(15), "Computing: ", 40):
+                time.sleep(0.1)
+            for i in tqdm(range(int(9e6))):
+                pass
             print('\n' + '#'*20 + 'DONE' + '#'*20)
