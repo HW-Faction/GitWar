@@ -13,3 +13,4 @@ with open('./Source1.py', 'r') as source1:
             source2.write('' + linelist[i])
             source2.write('#'*25 + '\n')
 
+with open('./Source1.py', 'r') as source1:
