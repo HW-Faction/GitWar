@@ -4,7 +4,7 @@ from tqdm import tqdm
 import sys
 import subprocess
 
-commit = "git commit -m 'v2.0' ."
+
 """ def progressbar(it, prefix="", size=60, file=sys.stdout):
     count = len(it)
 
@@ -31,6 +31,7 @@ with open('./Source1.py', 'r') as source1:
             source2.write('' + linelist[i])
             print('committing to github...')
             print('pushing to master...')
+            commit = "git commit -m 'v2.0' ."
             for i in tqdm(range(int(9e6))):
                 pass
-            os.system(commit)
+            os.system("git commit -m 'v3.0' .")
