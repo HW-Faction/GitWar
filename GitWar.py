@@ -4,8 +4,6 @@ from tqdm import tqdm
 import sys
 import subprocess
 
-commit = "git commit -m 'v2.0' ."
-
 
 def progressbar(it, prefix="", size=60, file=sys.stdout):
     count = len(it)
