@@ -4,8 +4,10 @@ from tqdm import tqdm
 import sys
 import subprocess
 
+commit = "git commit -m 'v2.0' ."
 
-""" def progressbar(it, prefix="", size=60, file=sys.stdout):
+
+def progressbar(it, prefix="", size=60, file=sys.stdout):
     count = len(it)
 
     def show(j):
@@ -20,18 +22,20 @@ import subprocess
     file.write("\n")
     file.flush()
 
-for i in progressbar(range(15), "Computing: ", 40):
-    time.sleep(0.1) """
 
 with open('./Source1.py', 'r') as source1:
     with open('Source2.py', 'a') as source2:
         linelist = source1.readlines()
         countOfLines = len(linelist)
-        for i in range(countOfLines):
+        for i in range(1):
+            print('saving the code')
             source2.write('' + linelist[i])
             print('committing to github...')
+            os.system("git commit -m 'v4.0' .")
+            for i in progressbar(range(15), "Computing: ", 40):
+                time.sleep(0.1)
             print('pushing to master...')
-            commit = "git commit -m 'v2.0' ."
+
             for i in tqdm(range(int(9e6))):
-                pass
-            os.system("git commit -m 'v3.0' .")
+                os.system('git push origin master')
+            print('\n' + '#'*20 + 'DONE' + '#'*20)
