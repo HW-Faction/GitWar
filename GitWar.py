@@ -25,7 +25,7 @@ with open('./Source1.py', 'r') as source1:
     with open('Source2.py', 'a') as source2:
         linelist = source1.readlines()
         countOfLines = len(linelist)
-        for i in range(3):
+        for i in range(countOfLines):
             print('saving line', i)
             source2.write('' + linelist[i])
             print('committing to github...')
@@ -41,4 +41,4 @@ with open('./Source1.py', 'r') as source1:
                 time.sleep(0.1)
             for i in tqdm(range(int(9e6))):
                 pass
-            print('\n' + '#'*20 + ' ---DONE--- ' + '#'*20)
+            print('\n' + '#'*20 + ' ---DONE--- ' + '#'*20 + '\n')
