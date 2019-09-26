@@ -4,6 +4,8 @@ from tqdm import tqdm
 import sys
 import subprocess
 
+# hashed progress bar
+
 
 def progressbar(it, prefix="", size=60, file=sys.stdout):
     count = len(it)
