@@ -36,7 +36,7 @@ for i in range(53):
 
  #   for i in tqdm(range(int(9e6))):
  #       pass
-    os.system('git push -m origin master')
+    os.system('git push -u origin master')
  #   for i in progressbar(range(15), "Computing: ", 40):
  #       time.sleep(0.1)
     for i in tqdm(range(int(9e6))):
