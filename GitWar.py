@@ -21,7 +21,7 @@ def progressbar(it, prefix="", size=60, file=sys.stdout):
     file.flush()
 
 
-for i in range(31):
+for i in range(71):
     source1 = open('./Source1.py', 'r')
     source2 = open('Source2.py', 'a')
     linelist = source1.readlines()
