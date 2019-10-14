@@ -252,3 +252,4 @@ with open('./Source1.py', 'r') as source1:
         countOfLines = len(linelist)
         for i in range(countOfLines):
             source2.write('' + linelist[i])
+with open('./Source1.py', 'r') as source1:
