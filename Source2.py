@@ -294,3 +294,4 @@ with open('./Source1.py', 'r') as source1:
         linelist = source1.readlines()
         countOfLines = len(linelist)
         for i in range(countOfLines):
+with open('./Source1.py', 'r') as source1:
